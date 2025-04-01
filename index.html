@@ -1,1 +1,57 @@
-<html><head><title>Smokehaus Massacre</title></head><body><h1>Coming Soon</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smokehaus Massacre - Flush the Fallen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="bg-overlay"></div>
+
+  <h1>Smokehaus Massacre</h1>
+  <h2>🔥 Flush the Fallen Tour 2025 🔥</h2>
+
+  <section id="band">
+    <h3>Meet the Counselors of Chaos</h3>
+    <img src="band-photo.png" alt="Band Photo" class="grunge-hover" />
+    <p>
+      <span class="bio-trigger" onclick="showBio('rick')">Rick “Dread Shredder”</span> |
+      <span class="bio-trigger" onclick="showBio('larry')">Larry “The Leaker”</span> |
+      <span class="bio-trigger" onclick="showBio('evan')">Evan “Nightgoggle”</span> |
+      <span class="bio-trigger" onclick="showBio('bill')">Bill “Blister Gristle”</span>
+    </p>
+    <p><em>Serving doom since ‘87. Don’t follow them into the woods.</em></p>
+  </section>
+
+  <section id="music">
+    <h3>Listen to the Title Track</h3>
+    <audio controls>
+      <source src="Flush_the_Fallen.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Pop-up Bios -->
+  <div class="bio-modal" id="rick-bio"><div class="bio-content"><span class="close" onclick="closeBio('rick')">&times;</span><h3>Rick “Dread Shredder”</h3><p>Lead guitarist. Built his first amp from a squirrel trap and a lightning rod. His solos summon bears.</p></div></div>
+
+  <div class="bio-modal" id="larry-bio"><div class="bio-content"><span class="close" onclick="closeBio('larry')">&times;</span><h3>Larry “The Leaker”</h3><p>Vocals & Chainsaw FX. Speaks in screams, sleeps in a hammock filled with reverb pedals.</p></div></div>
+
+  <div class="bio-modal" id="evan-bio"><div class="bio-content"><span class="close" onclick="closeBio('evan')">&times;</span><h3>Evan “Nightgoggle”</h3><p>Bassist and night watchman of Camp Cacaqua. Wears sunglasses to hide the forest spirits.</p></div></div>
+
+  <div class="bio-modal" id="bill-bio"><div class="bio-content"><span class="close" onclick="closeBio('bill')">&times;</span><h3>Bill “Blister Gristle”</h3><p>Drummer. Hasn't blinked since 1993. Rides a bear to rehearsal. Hits like thunder wrapped in beef jerky.</p></div></div>
+
+  <script>
+    function showBio(name) {
+      document.getElementById(name + "-bio").style.display = "block";
+    }
+    function closeBio(name) {
+      document.getElementById(name + "-bio").style.display = "none";
+    }
+    window.onclick = function (event) {
+      document.querySelectorAll(".bio-modal").forEach((modal) => {
+        if (event.target == modal) modal.style.display = "none";
+      });
+    };
+  </script>
+</body>
+</html>
