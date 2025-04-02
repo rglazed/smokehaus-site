@@ -18,10 +18,10 @@
 </section>
 
     <p>
-      <span class="bio-trigger" onclick="showBio('rick')">Rick “Dread Shredder”</span> |
       <span class="bio-trigger" onclick="showBio('larry')">Larry “The Leaker”</span> |
       <span class="bio-trigger" onclick="showBio('evan')">Evan “Nightgoggle”</span> |
       <span class="bio-trigger" onclick="showBio('bill')">Bill “Blister Gristle”</span>
+      <span class="bio-trigger" onclick="showBio('rick')">Rick “Dread Shredder”</span> |
     </p>
   </section>
 
@@ -95,7 +95,6 @@ Tommy had a secret that no one would dare...<br/>
   </section>
 
   <!-- Pop-up Bios -->
-  <div class="bio-modal" id="rick-bio"><div class="bio-content"><span class="close" onclick="closeBio('rick')">&times;</span><h3>Rick “Dread Shredder”</h3><p>Lead guitarist. Built his first amp from a squirrel trap and a lightning rod. His solos summon bears.</p></div></div>
 
   <div class="bio-modal" id="larry-bio"><div class="bio-content"><span class="close" onclick="closeBio('larry')">&times;</span><h3>Larry “The Leaker”</h3><p>Vocals & Chainsaw FX. Speaks in screams, sleeps in a hammock filled with reverb pedals.</p></div></div>
 
@@ -103,6 +102,8 @@ Tommy had a secret that no one would dare...<br/>
 
   <div class="bio-modal" id="bill-bio"><div class="bio-content"><span class="close" onclick="closeBio('bill')">&times;</span><h3>Bill “Blister Gristle”</h3><p>Drummer. Hasn't blinked since 1993. Rides a bear to rehearsal. Hits like thunder wrapped in beef jerky.</p></div></div>
 
+  <div class="bio-modal" id="rick-bio"><div class="bio-content"><span class="close" onclick="closeBio('rick')">&times;</span><h3>Rick “Dread Shredder”</h3><p>Lead guitarist. Built his first amp from a squirrel trap and a lightning rod. His solos summon bears.</p></div></div>
+    
   <script>
     function showBio(name) {
       document.getElementById(name + "-bio").style.display = "block";
