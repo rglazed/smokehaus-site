@@ -25,18 +25,32 @@
     </p>
   </section>
 
-  <section id="music">
-    <h3>Listen to the Title Track</h3>
-    <audio controls>
-    <source src="FlushFallen.mp3" type="audio/mpeg" />
-    </audio>
-  <section id="music">
-<h3>Listen to the Hacking Hag of Halfmoon</h3>
-      <audio controls>
-      <source src="hackinghag.mp3" type="audio/mpeg" />
-    </audio>
-  </section>
+  
 
+<section id="music" class="music-section">
+  <h2>💀 SmokeHaus Massacre – *Flush the Fallen*</h2>
+  <p class="album-subtitle">Campcore | 2025</p>
+
+  <ul class="tracklist">
+    <li onclick="playTrack('flush-the-fallen')">1. Flush the Fallen</li>
+    <li onclick="playTrack('hacking-hag')">2. The Hacking Hag of Halfmoon</li>
+    <li onclick="playTrack('ghosts-of-chili-night')">3. Ghosts of Chili Night</li>
+    <li onclick="playTrack('blair-hammock')">4. The Blair Hammock</li>
+    <li onclick="playTrack('campsite-666')">5. Campsite 666</li>
+  </ul>
+
+  <div class="player">
+    <audio id="audio-player" controls>
+      <source id="audio-source" src="/audio/flush-the-fallen.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</section>
+
+
+  
+
+  
   <section id="tracks">
     <h3>Track List: Flush the Fallen</h3>
     <ol>
@@ -154,5 +168,14 @@ Tommy had a secret that no one would dare...<br/>
       });
     };
   </script>
+    <script>
+  function playTrack(trackName) {
+    const player = document.getElementById('audio-player');
+    const source = document.getElementById('audio-source');
+    source.src = `/audio/${trackName}.mp3`; // Update with your actual path
+    player.load();
+    player.play();
+  }
+</script>
 </body>
 </html>
