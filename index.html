@@ -25,8 +25,8 @@
     </p>
   </section>
 
-  <section id="music" class="music-section">
-  <h2>💀 SmokeHaus Massacre – *Flush the Fallen*</h2>
+<section id="music" class="music-section">
+  <h2>SmokeHaus Massacre – Tracklist</h2>
   <p class="album-subtitle">Campcore | 2025</p>
 
   <div class="music-player">
@@ -45,76 +45,14 @@
 
     <div class="audio-control">
       <audio id="audio-player" controls>
-        <source id="audio-source" src="/audio/flush-the-fallen.mp3" type="audio/mpeg">
+        <source id="audio-source" src="audio/flush-the-fallen.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
     </div>
   </div>
 </section>
 
-<script>
-  function playTrack(trackName) {
-    const player = document.getElementById('audio-player');
-    const source = document.getElementById('audio-source');
-    source.src = `/audio/${trackName}.mp3`;
-    player.load();
-    player.play();
-  }
-</script>
-
-<style>
-  .music-section {
-    background-color: #0b0b0b;
-    color: #f5f5f5;
-    padding: 3rem;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-  }
-
-  .album-subtitle {
-    color: #aaa;
-    margin-bottom: 2rem;
-  }
-
-  .music-player {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    background-color: #1a1a1a;
-    padding: 2rem;
-    border: 1px solid #333;
-    border-radius: 8px;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .tracklist {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    width: 100%;
-  }
-
-  .tracklist button {
-    background-color: #222;
-    color: #f5f5f5;
-    border: 1px solid #444;
-    padding: 0.75rem;
-    font-size: 1rem;
-    text-align: left;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-
-  .tracklist button:hover {
-    background-color: #c0392b;
-  }
-
-  .audio-control audio {
-    width: 100%;
-  }
-</style>
+<script src="js/music-player.js"></script>
 
   <section id="music">
   <section id="lyrics">
