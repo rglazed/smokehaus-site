@@ -134,3 +134,45 @@ blockquote {
   99% { opacity: 0.6; }
   100% { opacity: 1; }
 }
+.music-section {
+  background: #111;
+  color: #f5f5f5;
+  padding: 3rem;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.album-subtitle {
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.tracklist {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+.tracklist li {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  background: #1e1e1e;
+  cursor: pointer;
+  border: 1px solid #333;
+  transition: 0.2s;
+}
+
+.tracklist li:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+.player {
+  margin-top: 2rem;
+}
+
+audio {
+  width: 100%;
+  max-width: 400px;
+}
