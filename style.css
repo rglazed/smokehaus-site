@@ -144,6 +144,11 @@ blockquote {
   font-size: 1.2rem;
 }
 
+.merch-title {
+  width: 100%;
+  text-align: center;
+}
+
 @keyframes flicker {
   0% { opacity: 1; }
   98% { opacity: 0.98; }
