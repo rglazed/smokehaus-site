@@ -128,6 +128,22 @@ blockquote {
   font-size: 0.9em;
 }
 
+.merch-item {
+  text-align: center;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.center-title {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
 @keyframes flicker {
   0% { opacity: 1; }
   98% { opacity: 0.98; }
