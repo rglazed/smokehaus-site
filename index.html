@@ -17,10 +17,12 @@
 </section>
 
     <p>
-      <span class="bio-trigger" onclick="showBio('larry')">Larry “The Leaker”</span> |
-      <span class="bio-trigger" onclick="showBio('evan')">Evan “Nightgoggle”</span> |
-      <span class="bio-trigger" onclick="showBio('bill')">Bill “Blister Gristle”</span> |
-      <span class="bio-trigger" onclick="showBio('rick')">Rick “Dread Shredder”</span> 
+      <span class="bio-trigger" onclick="showBio('rick')">Rick “Glaze Caster”</span>
+      <span class="bio-trigger" onclick="showBio('bill')">Bill “Blister Gristle”</span>
+      <span class="bio-trigger" onclick="showBio('noah')">Noah "Chainsawcade"</span> |
+      <span class="bio-trigger" onclick="showBio('evan')">Evan “Synthferatu”</span> |
+      <span class="bio-trigger" onclick="showBio('larry')">Larry “The Grillhammer”</span>
+       
     </p>
   </section>
 
@@ -301,14 +303,30 @@
 
   <!-- Pop-up Bios -->
 
-  <div class="bio-modal" id="larry-bio"><div class="bio-content"><span class="close" onclick="closeBio('larry')">&times;</span><h3>Larry “The Leaker”</h3><p>Vocals & Chainsaw FX. Speaks in screams, sleeps in a hammock filled with reverb pedals.</p></div></div>
+  <div class="bio-modal" id="rick-bio"><div class="bio-content"><span class="close" onclick="closeBio('rick')">&times;</span><h3>Rick “Glaze Caster”</h3><p>Lead guitarist. Armed with a flame-painted axe and a mind wired for madness, Rick doesn’t just play guitar—he engineers ritual destruction in drop-D. His riffs have been banned in four campgrounds and one Bass Pro Shop. When he hits a power chord, birds scatter, grills ignite.
+His pedalboard? A twisted contraption built from melted walkie-talkies, lost camper tags, and pure spite. Known for soloing while roasting marshmallows and summoning fog, Rick’s presence on stage is half Tetsuo, half forest cryptid.
+Rumor has it he once bent a tent stake using only feedback.</p></div></div>
 
-  <div class="bio-modal" id="evan-bio"><div class="bio-content"><span class="close" onclick="closeBio('evan')">&times;</span><h3>Evan “Nightgoggle”</h3><p>Bassist and night watchman of Camp Cacaqua. Wears sunglasses to hide the forest spirits.</p></div></div>
+    <div class="bio-modal" id="bill-bio"><div class="bio-content"><span class="close" onclick="closeBio('bill')">&times;</span><h3>Bill “Blister Gristle”</h3><p>Bassist. Forged in the back of a rusted-out Winnebago and bottle-fed expired protein shakes, Blister Gristle brings low-end thunder so filthy it’s been banned in three national forests. His bass tone has ruptured propane tanks, scattered herds of deer, and once made a park ranger retire on the spot.
 
-  <div class="bio-modal" id="bill-bio"><div class="bio-content"><span class="close" onclick="closeBio('bill')">&times;</span><h3>Bill “Blister Gristle”</h3><p>Drummer. Hasn't blinked since 1993. Rides a bear to rehearsal. Hits like thunder wrapped in beef jerky.</p></div></div>
+Known for tuning by gut instinct and slapping strings with raw bacon, Bill doesn’t play the bass—he wrestles it into submission. Rumor has it his rig runs on bear grease and the tears of guitarists.
 
-  <div class="bio-modal" id="rick-bio"><div class="bio-content"><span class="close" onclick="closeBio('rick')">&times;</span><h3>Rick “Dread Shredder”</h3><p>Lead guitarist. Built his first amp from a squirrel trap and a lightning rod. His solos summon bears.</p></div></div>
+Still recovering from the “Hotdog Incident of Site 42,” he’s legally not allowed within 100 yards of unguarded condiments.   </p></div></div>
+
+    <div class="bio-modal" id="noah-bio"><div class="bio-content"><span class="close" onclick="closeBio('noah')">&times;</span><h3>Noah "Chainsawcade"<</h3><p>Drums / Percussive Mayhem Unit
+Born in the belly of a malfunctioning log splitter and raised by a traveling demolition derby crew, Noah doesn’t keep time—he obliterates it. His kit is part drum set, part junkyard sculpture, and 100% structurally unsound. Every show is a controlled explosion with cymbals.
+Known to replace sticks mid-set with bratwursts, raccoon bones, or whatever’s within reach, Noah’s playing once caused a minor landslide and permanently altered the migration pattern of local geese. He keeps perfect tempo by listening to the flicker of campfire flames and the screams of startled hikers.
+When the metronome breaks, the drummer stays. And when the drummer’s Noah, no one's safe.</p></div></div>
+
+  <div class="bio-modal" id="evan-bio"><div class="bio-content"><span class="close" onclick="closeBio('evan')">&times;</span><h3>Evan “Synthferatu””</h3><p>Keyboards / Paranormal MIDI Operator
+Raised by wolves, abandoned by wolves, and adopted by a haunted Casio in a condemned RadioShack, Evan speaks fluent Moog and communes nightly with spectral synth tones. His keyboard solos have opened interdimensional portals, crashed two drones, and triggered three unscheduled FEMA alerts. Known for summoning fog with just a chord progression and making forest raccoons cry with minor 9ths. He once tried to play a lullaby but accidentally hexed a campsite and turned everyone’s marshmallows into frogs.</p></div></div>
+
+
+  <div class="bio-modal" id="larry-bio"><div class="bio-content"><span class="close" onclick="closeBio('larry')">&times;</span><h3>Larry “The Grillhammer”</h3><p>Vocals / Smokehaus Screamer General
+Larry doesn’t sing—he exorcises demons through a megaphone duct-taped to a bear trap. Born in a fire pit during a Slayer tribute bonfire, Larry found his voice howling at coyotes and blowing out CB radios within a 12-mile radius. His screams have been known to ignite citronella candles and rupture aluminum canoe hulls.
+With a stage presence described as “a haunted park ranger possessed by a fog machine,” Larry commands the crowd like a deranged camp counselor armed with a mic and questionable safety instructions. When he yells “Are you ready?”, local wildlife immediately flees, and distant grills spontaneously ignite.</p></div></div>
   <script>
+    
     function showBio(name) {
       document.getElementById(name + "-bio").style.display = "block";
     }
